@@ -1,0 +1,13 @@
+// I left some containers and images needed for other courses
+
+$ docker ps -a
+CONTAINER ID   IMAGE                            COMMAND                  CREATED        STATUS          PORTS                             NAMES
+177a2d951565   ghcr.io/k3d-io/k3d-proxy:5.4.9   "/bin/sh -c nginx-pr…"   22 hours ago   Up 48 minutes   80/tcp, 0.0.0.0:34289->6443/tcp   k3d-k3s-default-serverlb
+165cc081db73   rancher/k3s:v1.25.7-k3s1         "/bin/k3d-entrypoint…"   22 hours ago   Up 48 minutes                                     k3d-k3s-default-agent-1
+d2ce77567690   rancher/k3s:v1.25.7-k3s1         "/bin/k3d-entrypoint…"   22 hours ago   Up 48 minutes                                     k3d-k3s-default-agent-0
+1d9effa05e48   rancher/k3s:v1.25.7-k3s1         "/bin/k3d-entrypoint…"   22 hours ago   Up 48 minutes                                     k3d-k3s-default-server-0
+
+$ docker images
+REPOSITORY                 TAG            IMAGE ID       CREATED       SIZE
+ghcr.io/k3d-io/k3d-proxy   5.4.9          55aa42e8234e   3 weeks ago   42.4MB
+rancher/k3s                v1.25.7-k3s1   49c38acd1ed0   4 weeks ago   216MB
