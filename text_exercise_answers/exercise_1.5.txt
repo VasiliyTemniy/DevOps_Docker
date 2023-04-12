@@ -1,0 +1,38 @@
+// Difference between images:
+
+devopsdockeruh/simple-web-service   ubuntu         4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine         fd312adc88e0   2 years ago   15.7MB
+
+// Alpine has 68MB less, including no bash.
+
+// Command to start devopsdockeruh/simple-web-service:alpine
+
+docker run --rm -it --name exercise devopsdockeruh/simple-web-service:alpine
+
+// It gives an output inside of a container in a log file 
+
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+
+
+// To access it, type in second terminal
+
+docker exec -it exercise /bin/sh
+
+// Then
+
+/usr/src/app # ls
+
+server    text.log
+
+
+/usr/src/app # cat text.log
+
+2023-04-12 13:16:14 +0000 UTC
+2023-04-12 13:16:16 +0000 UTC
+2023-04-12 13:16:18 +0000 UTC
+2023-04-12 13:16:20 +0000 UTC
+2023-04-12 13:16:22 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
