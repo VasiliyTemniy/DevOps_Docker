@@ -1,0 +1,25 @@
+// To read the README:
+
+
+// Terminal 1
+
+docker run -it --name exercise devopsdockeruh/pull_exercise
+
+Give me the password: 
+
+// Terminal 2
+
+docker exec -it exercise sh
+
+/usr/app # ls
+Dockerfile  README.md   index.js
+/usr/app # cat README.md
+This is the readme, use input "basics" to complete this exercise.
+
+// So, the password is "basics"
+
+// Terminal 1
+
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
