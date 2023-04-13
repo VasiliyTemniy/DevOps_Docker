@@ -1,0 +1,1 @@
+docker run -it --name exercise -v "$(pwd)"/study/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service:alpine
