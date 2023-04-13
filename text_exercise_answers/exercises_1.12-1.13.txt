@@ -1,0 +1,23 @@
+// Commands
+// Build
+
+// 1.12:
+
+docker build -t example-frontend .
+
+// 1.13:
+
+docker build -t example-backend .
+
+// Run
+
+// 1.12:
+
+docker run -it --name exercise-frontend -p 127.0.0.1:5000:5000 example-frontend
+
+// 1.13:
+
+docker run -it --name exercise-backend -p 127.0.0.1:8000:8080 example-backend
+
+// REACT_APP_BACKEND_URL === http://localhost:8000 (not 8080, to make a difference)
+// backend REQUEST_ORIGIN === http://localhost:5000
