@@ -1,7 +1,0 @@
-.dockerignore
-.gitignore
-node_modules
-Dockerfile
-dev.Dockerfile
-cypress
-cypress.config.js
