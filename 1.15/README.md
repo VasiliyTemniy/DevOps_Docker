@@ -1,5 +1,4 @@
-# DevOps with Docker exercises 1.15 - 1.16
-# Exercise 1.15
+# DevOps with Docker exercise 1.15
 
 ### Uses bloglist app made for Fullstack open course
 
