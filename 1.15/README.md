@@ -17,7 +17,9 @@ Port 8080 is fixed because frontend is built with this port for backend and it c
 Necessary env variables:
 
 MONGODB_URI - Uri of your Mongo DB
+
 PORT - Port for backend
+
 SECRET - Secret for token creation and validation
 
 ### Frontend
